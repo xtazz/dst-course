@@ -9,7 +9,7 @@ def guess(number):
 
     predict = high / 2
 
-    while number != predict:
+    while number != predict and number != low and number != high:
         count += 1
 
         if number > predict:
