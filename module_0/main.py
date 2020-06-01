@@ -1,4 +1,5 @@
 import numpy as np
+from game import guess
 
 
 def score_game(game_logic, times):
@@ -13,3 +14,7 @@ def score_game(game_logic, times):
     score = int(np.mean(count_ls))
 
     return score
+
+
+attempts = score_game(guess, 1000)
+print(f"Provided game logic function guesses the number using on average {attempts} attempts")
